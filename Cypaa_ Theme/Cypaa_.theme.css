@@ -78,6 +78,8 @@
 
 /*========================================================Membre du serveur=======================================================*/
 
+/*========================================================Membre du serveur=======================================================*/
+
 .membersWrap-2h-GB4 { /*Barre*/
 	width: 55px;
 	position: relative;
@@ -107,6 +109,55 @@
 .membersWrap-2h-GB4:hover .membersGroup-v9BXpm{ /*Nom des Roles quand la souris est sur la Barre*/
 	font-size: 12px;
 	transform: translateX(0);
+}
+
+.membersWrap-2h-GB4 .content-3QAtGj{ /*Nom des Membres*/
+  font-size: 0px;
+  transform: scale3d(0,-2,0); /*Taille 3D, scale3d(sx,sx,sz), s= size*/
+  /*transform: translateY(100%);*/
+  transition: all 1.25s ease;
+  transition-delay: .25s;
+}
+
+.membersWrap-2h-GB4:hover .content-3QAtGj{ /*Nom des Membres quand la souris est sur la Barre*/
+  transform: scale3d(1,1,1);
+  transform:
+  /*transform: translateY(0);*/
+  font-size: 16px;
+}
+
+.wrapper-3t9DeA svg{ /*Tous les logo des Membres*/
+  transform: scale3d(1,1,1);
+  transition: all 0.5s ease;
+}
+
+.content-3xS9Lh:hover .avatarContainer-2inGBK,
+.content-3xS9Lh:hover .avatar-3elDyV,
+.content-3xS9Lh:hover .avatarSmall-2CW6I1 svg{
+  transform: scale3d(-1,1,1);
+  transition-duration: 1s;
+}
+
+.content-3xS9Lh:hover .avatarContainer-2inGBK:hover,
+.content-3xS9Lh:hover .avatar-3elDyV:hover,
+.content-3xS9Lh:hover .avatarSmall-2CW6I1:hover svg{
+  transform: scale3d(1,1,1);
+}
+
+.headerCozy-2N9HOL:hover .wrapper-3t9DeA svg{ /*Logo+Nom du Membre dans le chat*/
+  transform: scale3d(-1,1,1);
+}
+
+.headerCozy-2N9HOL:hover .wrapper-3t9DeA:hover svg{ /*Logo+Nom du Membre dans le chat*/
+  transform: scale3d(1,1,1);
+}
+
+.container-3baos1:hover .wrapper-3t9DeA svg{ /*Logo de L'utilisateur ( a coté de couper le micro/casque/parametre)*/
+  transform: scale3d(-1,1,1);
+}
+
+.container-3baos1:hover .wrapper-3t9DeA:hover svg{ /*Logo de L'utilisateur ( a coté de couper le micro/casque/parametre)*/
+  transform: scale3d(1,1,1);
 }
 
 /*==================================================Liste des salons===============================================================*/
@@ -150,6 +201,7 @@
 .scroller-2wx7Hm .name-3_Dsmg:hover{ /*Nom des vocaux quand la souris est dessus*/
 	color: #008ACF;
 }
+
 /*=========================================================Liste des serveur========================================================*/
 
 .expandedFolderIconWrapper-1xLaU- path{ /*Logo Dossier, Groupe Serveur*/
