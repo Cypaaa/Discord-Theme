@@ -4,7 +4,7 @@
 /*=======================================================Menu des Parametres=====================================================*/
 
 :root {
-		--bgImage:url(https://img5.goodfon.com/original/2560x1440/9/24/astronaut-propast-noch-nebo-planeta-fantastika-skafandr.jpg);
+    --bgImage:url(https://raw.githubusercontent.com/Cypaaa/Discord-Theme/master/Cypaa_%20x%20NetronXFont/NetronX-Background.jpg);
     --brightness: 0.4;
     --customFont: 'Montserrat';
     --PrimaryColor01: rgb(32, 197, 119);
