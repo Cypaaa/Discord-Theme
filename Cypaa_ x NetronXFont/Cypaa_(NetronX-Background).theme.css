@@ -1,6 +1,30 @@
 //META{"name":"Cypaa_ Theme(NetronX Background)","description":"Made by Cypaa_","author":"Cypaa_","version":"NetronX"}*//
 
 
+
+
+
+/*
+====================================================
+====================================================
+
+# Discord-Theme
+All of the Discord Themes in this repertory are by Cypaa_#1778. Respect the works of others.
+
+Youtube : https://www.youtube.com/channel/UCFVRnCbnuk8tGeWzqC2P_Mw
+Discord : Cypaa_#1778
+
+Other work:
+Lucie (Discord Bot) : https://discordapp.com/oauth2/authorize?client_id=477068116753383424&scope=bot&permissions=2146958847
+
+====================================================
+====================================================
+*/
+
+
+
+
+
 /*=======================================================Menu des Parametres=====================================================*/
 
 :root {
@@ -131,14 +155,14 @@
 
 .content-3xS9Lh:hover .avatarContainer-2inGBK,
 .content-3xS9Lh:hover .avatar-3elDyV,
-.content-3xS9Lh:hover .avatarSmall-2CW6I1 svg{
+.content-3xS9Lh:hover .avatarSmall-2CW6I1 svg{ /*Logo des Membres en vocal*/
   transform: scale3d(-1,1,1);
   transition-duration: 1s;
 }
 
 .content-3xS9Lh:hover .avatarContainer-2inGBK:hover,
 .content-3xS9Lh:hover .avatar-3elDyV:hover,
-.content-3xS9Lh:hover .avatarSmall-2CW6I1:hover svg{
+.content-3xS9Lh:hover .avatarSmall-2CW6I1:hover svg{ /*Logo des Membres en vocal*/
   transform: scale3d(1,1,1);
 }
 
