@@ -52,8 +52,22 @@ Lucie (Discord Bot) : https://discordapp.com/oauth2/authorize?client_id=47706811
     --NTBackgroundColor02: #2b3039;
     --NTBackgroundColor03: #282c34;
     --NTBackgroundColor04: #21252c;
-    --versionText: "v1.0.0";
+    --versionText: "v1.2;
     --version: "Basic";
+}
+
+.markup-2BOw-j code{
+  background-color:rgba(47, 49, 54,0.8)!important;
+  font-size: 0.875rem!important;
+  line-height: 1rem!important;
+  text-indent: 0!important;
+}
+.markup-2BOw-j pre{
+border-bottom-color:rgba(32, 34, 37,0.5)!important;
+border-bottom-right-radius:4px!important;
+border-left-color:rgba(32, 34, 37,0.5)!important;
+border-right-color:rgba(32, 34, 37,0.5)!important;
+border-top-color:rgba(32, 34, 37,0.5)!important;
 }
 
 /*========================================================Membre du serveur=======================================================*/
