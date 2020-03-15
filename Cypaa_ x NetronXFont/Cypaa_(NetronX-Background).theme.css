@@ -113,7 +113,7 @@ Lucie (Discord Bot) : https://discordapp.com/oauth2/authorize?client_id=47706811
   background-color: rgba(0,0,100);
   background-image: url("https://cdn.discordapp.com/attachments/568597156466786310/688809264134881544/GameFont.png");
   background-repeat: repeat;
-  background-size: 300%;
+  background-size: 200%;
   background-position: center;
   animation-duration: 10s;
   animation-name: mouvementFondActivite;
@@ -124,18 +124,15 @@ Lucie (Discord Bot) : https://discordapp.com/oauth2/authorize?client_id=47706811
 
 @keyframes mouvementFondActivite {
   0%,100%{
-    background-position: center
+    background-position: center;
   }
-  20% {
-    background-position: bottom left;
-  }
-  40% {
+  25% {
     background-position: top right;
   }
-  60% {
-    background-position: bottom right;
+  50% {
+    background-position: bottom;
   }
-  80% {
-    background-position: top left;
+  75% {
+    background-position: left;
   }
 }
