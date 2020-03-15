@@ -252,16 +252,13 @@ border-top-color:rgba(32, 34, 37,0.5)!important;
 
 /*Background quand tu click sur le profil de qqn*/
 .headerPlaying-j0WQBV{
-  background: rgba(0,0,150,0.9);
+  background: rgba(0,0,150,0.9)!important;
 }
-.headerNormal-T_seeN{
+.headerNormal-T_seeN, .footer-1fjuF6, .quickMessage-1yeL4E{
   background-color: rgba(0,0,0,.8)!important;
 }
 .body-3iLsc4{
-  background-color: rgba(0,0,0,.6);
-}
-.footer-1fjuF6{
-  background-color: rgba(0,0,0,.8)!important;
+  background-color: rgba(0,0,0,.6)!important;
 }
 
 .animatorLeft-1EQxU0{
