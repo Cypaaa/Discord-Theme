@@ -93,13 +93,8 @@ body{
 
 
 
-
-
-
-
-
-
 /*Background quand tu click sur le profil de qqn*/
+
 .headerPlaying-j0WQBV{
   background: rgba(0,0,150,0.9);
 }
@@ -143,3 +138,4 @@ body{
   80% {
     background-position: top left;
   }
+}
