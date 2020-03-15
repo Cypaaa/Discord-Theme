@@ -3,7 +3,6 @@
 
 
 
-
 /*
 ====================================================
 ====================================================
@@ -22,16 +21,15 @@ Lucie (Discord Bot) : https://discordapp.com/oauth2/authorize?client_id=47706811
 */
 
 
-
-
-
-/*=======================================================Menu des Parametres=====================================================*/
-
 :root {
-  --bgImage:url('https://raw.githubusercontent.com/Cypaaa/Discord-Theme/master/Cypaa_%20x%20NetronXFont/NetronX-Background.jpg');
+  --bgImage:url('./Simple-image-background.jpg');
+  --bgImage:url('./Simple-image-background.png');
+  --bgImage:url('./Simple-image-background.gif');
+  --bgImage:url('./Simple-image-background.bmp');
+  --bgImage:url('./Simple-image-background.jpeg');
   /*--brightness: 0.4;
   --versionText: "v1.2";
-  --version: "Basic";*/
+  --version: "Simple";*/
 }
 body{
   background-image:var(--bgImage)!important;
@@ -39,9 +37,6 @@ body{
   background-repeat:no-repeat!important;
   background-size:cover!important
 }
-
-
-
 
 /*Transparence des conteneurs*/
   /*General*/
@@ -67,77 +62,84 @@ body{
     .scroller-2FKFPG::-webkit-scrollbar-track-piece{background:transparent!important;border:none!important;}
 
 
+/*Personnalisation objets*/
+  /*Transition Barre Général*/
+    .layout-2DM8Md{padding: 0 3px;} /*Nom + Logo + Activité des Membres*/
+    .membersWrap-2h-GB4:hover{width: 240px;}
+    .membersWrap-2h-GB4 .scrollerWrap-2lJEkd{width: 55px;}
+    .wrapper-3t9DeA svg{transform: scale3d(1,1,1);transition: all 0.5s ease;} /*Tous les logo des Membres*/
+    .headerCozy-2N9HOL:hover .wrapper-3t9DeA svg{transform: scale3d(-1,1,1);} /*Logo+Nom du Membre dans le chat*/
+    .headerCozy-2N9HOL:hover .wrapper-3t9DeA:hover svg{transform: scale3d(1,1,1);} /*Logo+Nom du Membre dans le chat*/
+    .membersWrap-2h-GB4:hover .content-3QAtGj{transform: scale3d(1,1,1);font-size:16px;} /*Nom des Membres quand la souris est sur la Barre*/
+    .membersWrap-2h-GB4:hover .membersGroup-v9BXpm{font-size: 12px;transform: translateX(0);} /*Nom des Roles quand la souris est sur la Barre*/
+    .membersWrap-2h-GB4 {width: 55px;position: relative;min-width: unset;transition: ease .25s, color 1s;} /*Barre des membres co*/
+    .membersWrap-2h-GB4 .content-3QAtGj{font-size:0px;transform: translateX(100%);transition: all .75s ease;} /*Nom des Membres*/
+    .membersGroup-v9BXpm{color: #FF1F00;font-size: 0px;transition: all 0.75s ease;transform: translateX(100%);} /*Nom des Roles*/
+
+  /*Colorations*/
+    /*Nom salons*/
+      .scroller-2wx7Hm .name-3_Dsmg{color: #00B9FF;} /*Nom des vocaux*/
+      .userLimit-64AFxe .wrapper-pZmgj4{color: #ABABAB;} /*Case donnant le nombre de personne max dans un vocal (ex: 01/07)*/
+      .scroller-2wx7Hm .container-2ax-kl{color: #0059FF;} /*Nom des categories*/
+      .scroller-2wx7Hm:hover .name-3_Dsmg{color: #00B9FF;} /*Nom des vocaux*/
+      .scroller-2wx7Hm .name-3_Dsmg:hover{color: #008ACF;} /*Nom des vocaux quand la souris est dessus*/
+      .userLimit-64AFxe .users-i_3-kL{background: #2A2A2A;} /*Nombre correspondant a n dans n/m (ex: pour 03/07, n correspond a 03)*/
+      .userLimit-64AFxe .total-3tKGEB{background: #1A1A1A;} /*Nombre correspondant a m dans n/m (ex: pour 02/12, m correspond a 12)*/
+      .scroller-2wx7Hm:hover .container-2ax-kl{color: #0059FF;} /*Nom des categories quand la souris est dans la zone de Liste*/
+      .scroller-2wx7Hm .container-2ax-kl:hover{color: #002BFF;} /*Nom des categories quand la souris passe dessus*/
+      .userLimit-64AFxe .total-3tKGEB:after {border-right-color: #1A1A1A;}
+    /*Liste des serveur*/
+      .expandedFolderIconWrapper-1xLaU- path{color: #43b581;} /*Logo Dossier, Groupe Serveur*/
 
 
 
 
 
 
-/*========================================================Membre du serveur=======================================================*/
 
-/*========================================================Membre du serveur=======================================================*/
 
-/*.membersWrap-2h-GB4 { /*Barre*/
-/*	width: 55px;
-	position: relative;
-	min-width: unset;
-	transition: ease .25s, color 1s;
+
+/*Background quand tu click sur le profil de qqn*/
+.headerPlaying-j0WQBV{
+  background: rgba(0,0,150,0.9);
+}
+.headerNormal-T_seeN{
+  background-color: rgba(0,0,0,.8)!important;
+}
+.body-3iLsc4{
+  background-color: rgba(0,0,0,.6);
+}
+.footer-1fjuF6{
+  background-color: rgba(0,0,0,.8)!important;
 }
 
-.membersWrap-2h-GB4 .scrollerWrap-2lJEkd{
-	width: 55px;
-}
-
-.membersWrap-2h-GB4:hover{
-	width: 240px;
-}
-
-.layout-2DM8Md{ /*Nom + Logo + Activité des Membres*/
-/*	padding: 0 3px;
-}
-
-.membersGroup-v9BXpm{ /*Nom des Roles*/
-/*	font-size: 0px;
-	transition: all 0.75s ease; /*On créait une transition de 0.75s qui vient de droite a gauche*/
-/*	transform: translateX(100%); /*On le met en X maximum, pour le mettre hors de la zone visible de discord*/
-/*}
-
-.membersWrap-2h-GB4:hover .membersGroup-v9BXpm{ /*Nom des Roles quand la souris est sur la Barre*/
-/*	font-size: 12px;
-	transform: translateX(0);
-}
-
-.membersWrap-2h-GB4 .content-3QAtGj{ /*Nom des Membres*/
-/*  font-size: 0px;
-  transform: translateX(100%);
-  transition: all 1.25s ease;
-}
-
-.membersWrap-2h-GB4:hover .content-3QAtGj{ /*Nom des Membres quand la souris est sur la Barre*/
-/*  transform: scale3d(1,1,1);
-  transform:
-  /*transform: translateY(0);*/
-/*  font-size: 16px;
-}
-
-/*=========================================================Liste des serveur========================================================*/
-/*
-.expandedFolderIconWrapper-1xLaU- path{ /*Logo Dossier, Groupe Serveur*/
-/*	color: #43b581;
-}
-
-
-/*divers*/
-
-
-/*.headerPlaying-j0WQBV .headerTop-3C2Zn0 {/*Background quand tu click sur le profil de qqn*/
-/*  background-color: transparent;
-  background-image: url("https://discordapp.com/assets/8eba753f8b6d02be1013c5e659b0fc2f.png");
-	background-position: center;
-  background-size: 200% 200%;
-  background-repeat: no-repeat;
-  animation-name: "moveBackgroundGame";
+.animatorLeft-1EQxU0{
+  border-radius: 8px;
+  background-color: rgba(0,0,100);
+  background-image: url("https://cdn.discordapp.com/attachments/568597156466786310/688809264134881544/GameFont.png");
+  background-repeat: repeat;
+  background-size: 300%;
+  background-position: center;
   animation-duration: 10s;
+  animation-name: mouvementFondActivite;
   animation-iteration-count: infinite;
+  animation-direction:;
   animation-delay: 0s;
 }
+
+@keyframes mouvementFondActivite {
+  0%,100%{
+    background-position: center
+  }
+  20% {
+    background-position: bottom left;
+  }
+  40% {
+    background-position: top right;
+  }
+  60% {
+    background-position: bottom right;
+  }
+  80% {
+    background-position: top left;
+  }
