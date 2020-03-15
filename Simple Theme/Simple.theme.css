@@ -1,1 +1,143 @@
+//META{"name":"Simple Theme","description":"A simple theme with animation and more by Cypaa_","author":"Cypaa_","version":"Simple"}*//
 
+
+
+
+
+/*
+====================================================
+====================================================
+
+# Discord-Theme
+All of the Discord Themes in this repertory are by Cypaa_#1778. Respect the works of others.
+
+Youtube : https://www.youtube.com/channel/UCFVRnCbnuk8tGeWzqC2P_Mw
+Discord : Cypaa_#1778
+
+Other work:
+Lucie (Discord Bot) : https://discordapp.com/oauth2/authorize?client_id=477068116753383424&scope=bot&permissions=2146958847
+
+====================================================
+====================================================
+*/
+
+
+
+
+
+/*=======================================================Menu des Parametres=====================================================*/
+
+:root {
+  --bgImage:url('https://raw.githubusercontent.com/Cypaaa/Discord-Theme/master/Cypaa_%20x%20NetronXFont/NetronX-Background.jpg');
+  /*--brightness: 0.4;
+  --versionText: "v1.2";
+  --version: "Basic";*/
+}
+body{
+  background-image:var(--bgImage)!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  background-size:cover!important
+}
+
+
+
+
+/*Transparence des conteneurs*/
+  /*General*/
+    .chat-3bRxxu{background-color:rgba(0,0,0,.05)}
+    .theme-dark{--background-secondary:rgba(0,0,0,.05);--background-tertiary:rgba(0,0,0,.05)}
+    .container-1D34oG, .themed-ANHk51, .scroller-2FKFPG{background-color:rgba(0,0,0,0)!important}
+    .panels-j1Uci_, .itemCard-v9viV7, .section-2gLsgF, .webkit-HjD9Er{background-color:rgba(0,0,0,0.6);border-radius:7px;}
+  /*Menu des parametres*/
+    .standardSidebarView-3F1I7i{background:0 0}
+    .contentRegion-3nDuYy{background-color:rgba(0,0,0,.4)}
+    .sidebarRegion-VFTUkN{background-color:rgba(0,0,0,.65)}
+    .lookFilled-1Gx00P.colorBrand-3pXr91{background-color:rgba(32,197,119,.9)}
+    .container-2lgZY8,.layer-3QrUeG,.layers-3iHuyZ{background:0 0!important}
+    .cardPrimary-1Hv-to,.cardPrimaryEditable-3KtE4g{background-color:rgba(0,0,0,.5);border:none}
+
+/*Personnalisation objets*/
+  /*Barre Haute(retressir/plein ecran/close)*/
+    .typeWindows-1za-n7{background-color:rgba(0,0,0,.75);margin:0;height:23px}
+  /*Scroller*/
+    .scroller-2FKFPG::-webkit-scrollbar{width: 5px;}
+    .scroller-2FKFPG::-webkit-scrollbar-thumb{background-color: white!important;}
+    .scroller-2FKFPG::-webkit-scrollbar-thumb{background-color: white!important;border:transparent;}
+    .scroller-2FKFPG::-webkit-scrollbar-track-piece{background:transparent!important;border:none!important;}
+
+
+
+
+
+
+
+
+/*========================================================Membre du serveur=======================================================*/
+
+/*========================================================Membre du serveur=======================================================*/
+
+/*.membersWrap-2h-GB4 { /*Barre*/
+/*	width: 55px;
+	position: relative;
+	min-width: unset;
+	transition: ease .25s, color 1s;
+}
+
+.membersWrap-2h-GB4 .scrollerWrap-2lJEkd{
+	width: 55px;
+}
+
+.membersWrap-2h-GB4:hover{
+	width: 240px;
+}
+
+.layout-2DM8Md{ /*Nom + Logo + Activité des Membres*/
+/*	padding: 0 3px;
+}
+
+.membersGroup-v9BXpm{ /*Nom des Roles*/
+/*	font-size: 0px;
+	transition: all 0.75s ease; /*On créait une transition de 0.75s qui vient de droite a gauche*/
+/*	transform: translateX(100%); /*On le met en X maximum, pour le mettre hors de la zone visible de discord*/
+/*}
+
+.membersWrap-2h-GB4:hover .membersGroup-v9BXpm{ /*Nom des Roles quand la souris est sur la Barre*/
+/*	font-size: 12px;
+	transform: translateX(0);
+}
+
+.membersWrap-2h-GB4 .content-3QAtGj{ /*Nom des Membres*/
+/*  font-size: 0px;
+  transform: translateX(100%);
+  transition: all 1.25s ease;
+}
+
+.membersWrap-2h-GB4:hover .content-3QAtGj{ /*Nom des Membres quand la souris est sur la Barre*/
+/*  transform: scale3d(1,1,1);
+  transform:
+  /*transform: translateY(0);*/
+/*  font-size: 16px;
+}
+
+/*=========================================================Liste des serveur========================================================*/
+/*
+.expandedFolderIconWrapper-1xLaU- path{ /*Logo Dossier, Groupe Serveur*/
+/*	color: #43b581;
+}
+
+
+/*divers*/
+
+
+/*.headerPlaying-j0WQBV .headerTop-3C2Zn0 {/*Background quand tu click sur le profil de qqn*/
+/*  background-color: transparent;
+  background-image: url("https://discordapp.com/assets/8eba753f8b6d02be1013c5e659b0fc2f.png");
+	background-position: center;
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  animation-name: "moveBackgroundGame";
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
