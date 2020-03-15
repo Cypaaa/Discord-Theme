@@ -44,6 +44,7 @@ body{
     .theme-dark{--background-secondary:rgba(0,0,0,.05);--background-tertiary:rgba(0,0,0,.05)}
     .container-1D34oG, .themed-ANHk51, .scroller-2FKFPG{background-color:rgba(0,0,0,0)!important}
     .panels-j1Uci_, .itemCard-v9viV7, .section-2gLsgF, .webkit-HjD9Er{background-color:rgba(0,0,0,0.6);border-radius:7px;}
+        .emojiPicker-3m1S-j, .emojiPicker-3m1S-j .infoBar-U6oBFk,.emojiPicker-3m1S-j .searchBar-2pWH0_{background-color:rgba(0,0,0,.5)!important;border-radius:8px;}
   /*Menu des parametres*/
     .standardSidebarView-3F1I7i{background:0 0}
     .contentRegion-3nDuYy{background-color:rgba(0,0,0,.4)}
